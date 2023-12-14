@@ -1,0 +1,86 @@
+.container-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: -2px;
+    background: url(../../images/glowing-spaceship-orbits-sphere-deep-space-generated-by-ai\ 1.jpg);
+    background-size: cover;    
+}
+
+.container-form {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.90);
+    display: flex;
+    width: 60%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.form-filter {
+    width: 100%;
+    font-size: 16px;
+}
+
+.container-center {
+    width: 800px;
+    height: 402px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.logo-image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 321.55px;
+  height: 143.41px;
+  flex-shrink: 0;
+}
+
+.card-container{
+    width: 592px;
+    height: 381px;
+    background: 'white';
+    border-radius: 10px;
+}
+
+.container-mars {
+width: 678.356px;
+height: 413px;
+flex-shrink: 0;
+border-radius: 10px;
+background: url(../../images/mars.jpg), lightgray 50% / cover no-repeat;
+background-size: 678.356px 413px;
+display: flex;
+}
+
+@media (max-width: 768px) {
+  .container-mars {
+    width: 339.178px; 
+    height: 206.5px; 
+    background-size: 339.178px 206.5px; 
+  }
+  .card-container{
+    width: 355;
+    height: 462;
+  }
+}
+
+.mars-image {
+  width: 413px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.MuiBottomNavigation-root {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.planet-img{
+    width: 82.41px;
+    height: 82.41px;
+}
