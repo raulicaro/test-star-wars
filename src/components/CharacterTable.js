@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Spinner from './Spinner';  
-import { Typography } from '@material-ui/core';
+import { CircularProgress, Typography } from '@material-ui/core';
 
 const CharacterTable = ({ characterUrls }) => {
   const [characters, setCharacters] = useState([]);
@@ -53,7 +52,7 @@ const CharacterTable = ({ characterUrls }) => {
   return (
     <div>
       {isLoading ? (
-        <Spinner />
+        <CircularProgress/>
       ) : (
         characters.length > 0 && (
           <Typography>{characterNamesString}...</Typography>

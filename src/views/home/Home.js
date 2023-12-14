@@ -54,7 +54,7 @@ const Home = () => {
               <Typography  style={{ textAlign: 'center', color: 'white', fontSize: 16, fontFamily: 'Montserrat', fontWeight: '400', textTransform: 'uppercase', letterSpacing: 2.48, wordWrap: 'break-word' }} align='center' variant='h3'>
                 PLANET SEARCH
               </Typography>
-              <img src={StarWarsLogo} alt='Starwarslogo' onClick={() => location.reload()} className='logo-image'/>
+              <img src={StarWarsLogo} alt='Starwarslogo' onClick={() => window.location.reload()} className='logo-image'/>
             </Grid>
           </Grid>
           {isLoading ? <LinearProgress color='secondary'/> : planet !== null ?  (

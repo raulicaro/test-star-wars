@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Spinner from './Spinner';  
-import { Typography } from '@material-ui/core';
+import axios from 'axios'; 
+import { CircularProgress, Typography } from '@material-ui/core';
 
 const FilmTable = ({ filmUrls }) => {
   const [films, setFilms] = useState([]);
@@ -53,7 +52,7 @@ const FilmTable = ({ filmUrls }) => {
   return (
     <div>
       {isLoading ? (
-        <Spinner />
+        <CircularProgress />
       ) : (
         films.length > 0 && (
           <Typography>{filmNamesString}</Typography>
